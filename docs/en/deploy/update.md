@@ -1,5 +1,15 @@
 # Update LangBot
 
+## Using Package Manager
+
+Please execute in the directory you deployed LangBot again:
+
+```bash
+uvx langbot@latest
+```
+
+This command will download and start the latest version of LangBot.
+
 ## Using Docker (or one-click deployment based on Docker)
 
 Please execute in the directory you cloned LangBot:

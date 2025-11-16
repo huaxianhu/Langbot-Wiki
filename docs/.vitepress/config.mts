@@ -59,6 +59,7 @@ export default defineConfig({
                 text: "部署 LangBot",
                 collapsed: true,
                 items: [
+                  { text: "包管理器部署", link: "/zh/deploy/langbot/package" },
                   { text: "Docker部署", link: "/zh/deploy/langbot/docker" },
                   {
                     text: "1Panel面板部署",

@@ -1,5 +1,15 @@
 # 更新 LangBot
 
+## 使用包管理器部署
+
+请在之前使用包管理器部署的目录下重新执行：
+
+```bash
+uvx langbot@latest
+```
+
+这将重新下载并启动最新版本的 LangBot。
+
 ## 使用 Docker（或基于 Docker 的一键部署）
 
 请在之前 Clone 的 LangBot 目录下执行：
