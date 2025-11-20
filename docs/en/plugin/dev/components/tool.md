@@ -63,11 +63,12 @@ from __future__ import annotations
 from typing import Any
 
 from langbot_plugin.api.definition.components.tool.tool import Tool
+from langbot_plugin.api.entities.builtin.provider import session as provider_session
 
 
 class GetWeatherAlerts(Tool):
 
-    async def call(self, params: dict[str, Any]) -> dict[str, Any]:
+    async def call(self, params: dict[str, Any], session: provider_session.Session, query_id: int) -> str:
         """Fill your tool code here"""
         return {}
 ```
@@ -84,6 +85,7 @@ from __future__ import annotations
 from typing import Any
 
 from langbot_plugin.api.definition.components.tool.tool import Tool
+from langbot_plugin.api.entities.builtin.provider import session as provider_session
 import httpx
 
 # Constants
@@ -118,7 +120,7 @@ Instructions: {props.get('instruction', 'No specific instructions provided')}
 
 class GetWeatherAlerts(Tool):
 
-    async def call(self, params: dict[str, Any]) -> dict[str, Any]:
+    async def call(self, params: dict[str, Any], session: provider_session.Session, query_id: int) -> str:
         """Fill your tool code here"""
         state = params.get("state", "CA")
 
