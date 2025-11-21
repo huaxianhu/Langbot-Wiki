@@ -196,6 +196,7 @@ export default defineConfig({
                 items: [
                   { text: "基础教程", link: "/zh/plugin/dev/tutor" },
                   { text: "完善配置信息", link: "/zh/plugin/dev/basic-info" },
+                  { text: "目录规范", link: "/zh/plugin/dev/directory-structure" },
                   {
                     text: "组件开发",
                     collapsed: true,
@@ -467,6 +468,7 @@ export default defineConfig({
                 items: [
                   { text: "Basic Tutorial", link: "/en/plugin/dev/tutor" },
                   { text: "Complete Plugin Configuration Information", link: "/en/plugin/dev/basic-info" },
+                  { text: "Directory Structure", link: "/en/plugin/dev/directory-structure" },
                   {
                     text: "Component Development",
                     collapsed: true,
