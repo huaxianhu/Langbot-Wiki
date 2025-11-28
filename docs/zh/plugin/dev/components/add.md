@@ -5,6 +5,7 @@
 - 事件监听器（EventListener）：监听流水线执行期间的事件，对上下文或流水线进行修改。
 - 命令（Command）：由用户通过`!`（或其他已设置的前缀）开头的命令消息触发。
 - 工具（Tool）：供 LangBot 内置的 Local Agent 在执行期间由 LLM 调用。
+- 知识检索器（KnowledgeRetriever）：为 LangBot 提供外部知识库检索能力，支持接入各类 RAG 系统。
 
 ## 添加组件
 
@@ -70,3 +71,4 @@ components:
 - [EventListener](./event-listener.md)
 - [Command](./command.md)
 - [Tool](./tool.md)
+- [KnowledgeRetriever](./knowledge-retriever.md)

@@ -205,6 +205,7 @@ export default defineConfig({
                       { text: "组件：事件监听器", link: "/zh/plugin/dev/components/event-listener" },
                       { text: "组件：命令", link: "/zh/plugin/dev/components/command" },
                       { text: "组件：工具", link: "/zh/plugin/dev/components/tool" },
+                      { text: "组件：知识检索器", link: "/zh/plugin/dev/components/knowledge-retriever" },
                     ],
                   },
                   {
@@ -477,6 +478,7 @@ export default defineConfig({
                       { text: "Component: Event Listener", link: "/en/plugin/dev/components/event-listener" },
                       { text: "Component: Command", link: "/en/plugin/dev/components/command" },
                       { text: "Component: Tool", link: "/en/plugin/dev/components/tool" },
+                      { text: "Component: Knowledge Retriever", link: "/en/plugin/dev/components/knowledge-retriever" },
                     ],
                   },
                   {
