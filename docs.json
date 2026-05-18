@@ -231,19 +231,28 @@
                       "en/usage/platforms/qq/aiocqhttp/napcat",
                       "en/usage/platforms/qq/aiocqhttp/lagrange",
                       "en/usage/platforms/qq/aiocqhttp/llonebot"
-                    ]
+                    ],
+                    "icon": {
+                      "name": "qq",
+                      "style": "brands"
+                    }
                   },
                   {
                     "group": "Satori (QQ & Multi-Platform)",
                     "pages": [
                       "en/usage/platforms/satori/llonebot"
-                    ]
+                    ],
+                    "icon": "robot"
                   },
                   {
                     "group": "QQ Official Bot",
                     "pages": [
                       "en/usage/platforms/qq/official_webhook"
-                    ]
+                    ],
+                    "icon": {
+                      "name": "qq",
+                      "style": "brands"
+                    }
                   },
                   {
                     "group": "WeCom (Enterprise WeChat)",
@@ -251,13 +260,18 @@
                       "en/usage/platforms/wecom/wecom",
                       "en/usage/platforms/wecom/wecomcs",
                       "en/usage/platforms/wecom/wecombot"
-                    ]
+                    ],
+                    "icon": "/images/platforms/wecom.svg"
                   },
                   {
                     "group": "WeChat",
                     "pages": [
                       "en/usage/platforms/wechat/weixin"
-                    ]
+                    ],
+                    "icon": {
+                      "name": "weixin",
+                      "style": "brands"
+                    }
                   }
                 ]
               },
@@ -658,19 +672,28 @@
                       "ja/usage/platforms/qq/aiocqhttp/napcat",
                       "ja/usage/platforms/qq/aiocqhttp/lagrange",
                       "ja/usage/platforms/qq/aiocqhttp/llonebot"
-                    ]
+                    ],
+                    "icon": {
+                      "name": "qq",
+                      "style": "brands"
+                    }
                   },
                   {
                     "group": "Satori（QQ等マルチプラットフォーム）",
                     "pages": [
                       "ja/usage/platforms/satori/llonebot"
-                    ]
+                    ],
+                    "icon": "robot"
                   },
                   {
                     "group": "QQ 公式ボット",
                     "pages": [
                       "ja/usage/platforms/qq/official_webhook"
-                    ]
+                    ],
+                    "icon": {
+                      "name": "qq",
+                      "style": "brands"
+                    }
                   },
                   {
                     "group": "WeCom（企業微信）",
@@ -678,13 +701,18 @@
                       "ja/usage/platforms/wecom/wecom",
                       "ja/usage/platforms/wecom/wecomcs",
                       "ja/usage/platforms/wecom/wecombot"
-                    ]
+                    ],
+                    "icon": "/images/platforms/wecom.svg"
                   },
                   {
                     "group": "WeChat",
                     "pages": [
                       "ja/usage/platforms/wechat/weixin"
-                    ]
+                    ],
+                    "icon": {
+                      "name": "weixin",
+                      "style": "brands"
+                    }
                   }
                 ]
               },
