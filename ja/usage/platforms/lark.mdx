@@ -3,6 +3,20 @@ title: "Feishu"
 icon: "/images/platforms/lark.svg"
 ---
 
+## プラットフォームドメインの選択
+
+ボットを作成する際、**アダプター設定**で**プラットフォームドメイン**を選択する必要があります：
+
+- **飞书 (open.feishu.cn)**：国内の飛書ユーザー向け（デフォルト）
+- **Lark (open.larksuite.com)**：海外のLarkユーザー向け
+- **カスタム (custom)**：プライベートデプロイユーザー向け
+
+![プラットフォームドメインの選択](/images/zh/deploy/bots/lark/lark_platform_domain.png)
+
+<Warning>
+海外版のLarkを選択する場合、`open.larksuite.com`ドメインを使用してください。そうしないと、接続に失敗する可能性があります。プライベートデプロイユーザーは、実際のデプロイアドレスに応じてカスタムを選択し、対応するドメインを入力してください。
+</Warning>
+
 ## 一键設定（おすすめ）
 
 LangBot は Feishu アプリのワンクリック作成とクレデンシャルの自動入力に対応しています。手動でのコピペは不要です。

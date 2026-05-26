@@ -3,6 +3,20 @@ title: "Feishu"
 icon: "/images/platforms/lark.svg"
 ---
 
+## Select Platform Domain
+
+When creating a bot, you need to select the **Platform Domain** in the **Adapter Configuration** section:
+
+- **Feishu (open.feishu.cn)**: For mainland China Feishu users (default)
+- **Lark (open.larksuite.com)**: For overseas Lark users
+- **Custom**: For private deployment users
+
+![Select Platform Domain](/images/zh/deploy/bots/lark/lark_platform_domain.png)
+
+<Warning>
+If you select overseas Lark, make sure to use the `open.larksuite.com` domain, otherwise the connection may fail. For private deployment users, please select custom and fill in the corresponding domain based on your actual deployment address.
+</Warning>
+
 ## One-Click Setup (Recommended)
 
 LangBot supports one-click Feishu app creation with automatic credential filling — no manual copy-paste needed.

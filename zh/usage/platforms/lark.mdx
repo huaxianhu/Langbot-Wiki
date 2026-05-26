@@ -2,6 +2,21 @@
 title: "飞书"
 icon: "/images/platforms/lark.svg"
 ---
+
+## 选择平台域名
+
+创建机器人时，需要在**适配器配置**中选择**平台域名**：
+
+- **飞书 (open.feishu.cn)**：适用于国内飞书用户（默认选项）
+- **Lark (open.larksuite.com)**：适用于海外 Lark 用户
+- **自定义 (custom)**：适用于使用私有化部署的用户
+
+![选择平台域名](/images/zh/deploy/bots/lark/lark_platform_domain.png)
+
+<Warning>
+如果选择海外版 Lark，请确保使用 `open.larksuite.com` 域名，否则可能导致连接失败。私有化部署用户请根据实际部署地址选择自定义并填写对应域名。
+</Warning>
+
 ## 一键配置（推荐）
 
 LangBot 支持一键创建飞书应用并自动填写凭证，无需手动复制粘贴。
