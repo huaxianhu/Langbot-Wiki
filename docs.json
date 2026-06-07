@@ -252,6 +252,7 @@
                 "pages": [
                   "en/deploy/langbot/package",
                   "en/deploy/langbot/docker",
+                  "en/deploy/langbot/kubernetes",
                   "en/deploy/langbot/one-click/1panel",
                   "en/deploy/langbot/one-click/bt",
                   "en/deploy/langbot/manual",
@@ -463,6 +464,7 @@
                 "pages": [
                   "zh/deploy/langbot/package",
                   "zh/deploy/langbot/docker",
+                  "zh/deploy/langbot/kubernetes",
                   "zh/deploy/langbot/one-click/1panel",
                   "zh/deploy/langbot/one-click/bt",
                   "zh/deploy/langbot/manual",
@@ -699,6 +701,7 @@
                 "pages": [
                   "ja/deploy/langbot/package",
                   "ja/deploy/langbot/docker",
+                  "ja/deploy/langbot/kubernetes",
                   "ja/deploy/langbot/one-click/1panel",
                   "ja/deploy/langbot/one-click/bt",
                   "ja/deploy/langbot/manual",
