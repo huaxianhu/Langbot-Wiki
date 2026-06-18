@@ -50,7 +50,7 @@ bot_uuid = await event_context.get_bot_uuid()
 
 ### 设置请求变量
 
-单次请求中某些信息会被存储到请求变量中，在使用 Dify 等外部 LLMOps 平台时，[这些变量会显式传入 LLMOps 平台](/zh/deploy/pipelines/readme.html#%E8%AF%B7%E6%B1%82%E5%8F%98%E9%87%8F)。
+单次请求中某些信息会被存储到请求变量中，在使用 Dify 等外部 Agent 平台时，[这些变量会显式传入 Agent 平台](/zh/deploy/pipelines/readme.html#%E8%AF%B7%E6%B1%82%E5%8F%98%E9%87%8F)。
 
 ```python
 async def set_query_var(self, key: str, value: Any):

@@ -27,7 +27,7 @@ AI機能は主に2つの部分に分かれています: ランナーの選択と
 
 <img width="400px" src="/images/zh/deploy/pipelines/edit_pipeline_ai.png" alt="edit_pipeline" />
 
-`Dify`、[`n8n`](https://n8n.io/)などの外部LLMOpsプラットフォームを使用することもできます。この場合、使用されるモデル、プロンプト、ツール、その他のリソースはLLMOpsプラットフォームによって提供されます。
+`Dify`、[`n8n`](https://n8n.io/)などの外部Agent プラットフォームを使用することもできます。この場合、使用されるモデル、プロンプト、ツール、その他のリソースはAgent プラットフォームによって提供されます。
 
 <img width="400px" src="/images/zh/deploy/pipelines/more_runner.png" alt="more_runner" />
 
@@ -35,7 +35,7 @@ AI機能は主に2つの部分に分かれています: ランナーの選択と
 - n8nへの接続の詳細手順は、[チュートリアルを参照](/ja/usage/pipelines/n8n.html)してください。
 
 ### 会話変数
-外部LLMOpsプラットフォームを使用する場合、LangBotは以下のパラメータを明示的に渡します。これらをLLMOpsプラットフォームワークフローの開始ノードに追加できます(以下の画像はDifyの例です):
+外部Agent プラットフォームを使用する場合、LangBotは以下のパラメータを明示的に渡します。これらをAgent プラットフォームワークフローの開始ノードに追加できます(以下の画像はDifyの例です):
 
 - `launcher_type`: ランチャーオブジェクトタイプ、プライベートチャットの場合は`person`、グループチャットの場合は`group`
 - `launcher_id`: ランチャーオブジェクトID、プライベートチャットの場合はユーザーID、グループチャットの場合はグループID

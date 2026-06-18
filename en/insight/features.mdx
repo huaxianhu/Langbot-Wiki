@@ -5,7 +5,7 @@ description: "LangBot is an open-source, production-grade, LLM-native instant me
 
 LangBot is an **open-source, production-grade, LLM-native instant messaging bot development platform**. It connects large language models to chat platforms, letting you build intelligent agents — that converse, call tools, and plug into your existing workflows — from a single codebase, all configured and monitored through a browser-based web panel.
 
-LangBot delivers an out-of-the-box IM bot development experience with built-in **Agent, RAG knowledge base, MCP, Skills and a code sandbox**, supports the world's mainstream instant messaging platforms, integrates deeply with LLMOps platforms such as Dify, Coze, n8n and Langflow, and exposes rich HTTP APIs and a production-grade plugin system for custom development.
+LangBot delivers an out-of-the-box IM bot development experience with built-in **Agent, RAG knowledge base, MCP, Skills and a code sandbox**, supports the world's mainstream instant messaging platforms, integrates deeply with Agent platforms such as Dify, Coze, n8n and Langflow, and exposes rich HTTP APIs and a production-grade plugin system for custom development.
 
 <Tip>
 **Don't want to self-host?** Try [LangBot Cloud](https://space.langbot.app/cloud) — no server required, sign up and start instantly.
@@ -16,7 +16,7 @@ LangBot delivers an out-of-the-box IM bot development experience with built-in *
 - **AI Conversation & Agent** — multi-turn dialogue, tool calling (function calling), multimodal (image/audio/file) and streaming output, ready out of the box.
 - **RAG Knowledge Base** — built-in vector retrieval with Rerank re-scoring, so your bot answers from your private knowledge.
 - **All-Platform Coverage** — one codebase reaches QQ, WeChat, WeCom, Lark, DingTalk, Discord, Telegram, Slack, LINE, KOOK, Matrix and more.
-- **Deep LLMOps Integration** — native connectors for Dify, Coze, n8n, Langflow, Deerflow, Aliyun Bailian, Ant TBox and other orchestration & workflow platforms.
+- **Deep Agent Platform Integration** — native connectors for Dify, Coze, n8n, Langflow, Deerflow, Aliyun Bailian, Ant TBox and other orchestration & workflow platforms.
 - **Skills & Code Sandbox** — on-demand instruction packs paired with a securely isolated code-execution sandbox, so the agent actually *gets things done*.
 - **MCP Protocol** — acts as a client into the Model Context Protocol tool ecosystem, supporting both Stdio and HTTP transports.
 - **Web Management Panel** — configure, manage and monitor bots visually in the browser, no manual config editing.
@@ -53,7 +53,7 @@ LangBot covers mainstream global IM platforms through a unified adapter layer �
 
 For fine-grained, per-platform feature support (sending/receiving images, audio, files, rich text, streaming responses, etc.), see the [platform features document](/en/insight/platform-features).
 
-## Model and LLMOps Platform Support
+## Model and Agent Platform Support
 
 Since 4.x, LangBot uses **LiteLLM as a unified model request backend**, so beyond the built-in providers below you can also connect any OpenAI-format or LiteLLM-supported model.
 
@@ -74,8 +74,8 @@ Since 4.x, LangBot uses **LiteLLM as a unified model request backend**, so beyon
 | [Ollama](https://ollama.com/) | ✅ | Local LLM running platform |
 | [LMStudio](https://lmstudio.ai/) | ✅ | Local LLM running platform |
 | [SiliconFlow](https://siliconflow.cn/) | ✅ | LLM gateway (MaaS) |
-| [Aliyun Bailian](https://bailian.console.aliyun.com/) | ✅ | LLM gateway (MaaS) / LLMOps platform |
-| [Volc Engine Ark](https://console.volcengine.com/ark) | ✅ | LLM gateway (MaaS) / LLMOps platform |
+| [Aliyun Bailian](https://bailian.console.aliyun.com/) | ✅ | LLM gateway (MaaS) / Agent platform |
+| [Volc Engine Ark](https://console.volcengine.com/ark) | ✅ | LLM gateway (MaaS) / Agent platform |
 | [ModelScope](https://modelscope.cn/docs/model-service/API-Inference/intro) | ✅ | LLM gateway (MaaS) |
 | [GiteeAI](https://ai.gitee.com/) | ✅ | LLM interface gateway (MaaS) |
 | [ShengSuanYun](https://www.shengsuanyun.com/?from=CH_KYIPP758) | ✅ | Global LLM aggregation (recommended) |
@@ -86,13 +86,13 @@ Since 4.x, LangBot uses **LiteLLM as a unified model request backend**, so beyon
 | [TokenPony](https://www.tokenpony.cn/453z1) | ✅ | LLM gateway (MaaS) |
 | [Qiniu](https://www.qiniu.com/ai/agent) | ✅ | LLM gateway (MaaS) |
 
-### LLMOps / Agent Orchestration Platforms
+### Agent Platforms
 
 Plug your existing workflows or agents straight into IM platforms — no need to rewrite your business logic.
 
 | Platform | Status | Remarks |
 | --- | --- | --- |
-| [Dify](https://dify.ai) | ✅ | LLMOps platform |
+| [Dify](https://dify.ai) | ✅ | Agent platform |
 | [Coze](https://coze.cn) | ✅ | Agent orchestration platform |
 | [n8n](https://n8n.io/) | ✅ | Workflow automation platform |
 | [Langflow](https://langflow.org/) | ✅ | Visual orchestration platform |

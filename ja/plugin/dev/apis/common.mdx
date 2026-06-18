@@ -50,7 +50,7 @@ bot_uuid = await event_context.get_bot_uuid()
 
 ### リクエスト変数の設定
 
-単一のリクエスト内の一部の情報は、リクエスト変数に保存されます。Difyなどの外部LLMOpsプラットフォームを使用する場合、[これらの変数はLLMOpsプラットフォームに明示的に渡されます](/en/deploy/pipelines/readme.html#request-variables)。
+単一のリクエスト内の一部の情報は、リクエスト変数に保存されます。Difyなどの外部Agent プラットフォームを使用する場合、[これらの変数はAgent プラットフォームに明示的に渡されます](/en/deploy/pipelines/readme.html#request-variables)。
 
 ```python
 async def set_query_var(self, key: str, value: Any):

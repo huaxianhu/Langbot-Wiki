@@ -321,7 +321,7 @@
                   "en/usage/models/readme",
                   "en/usage/pipelines/readme",
                   {
-                    "group": "LLMOps Platforms",
+                    "group": "Agent Platforms",
                     "pages": [
                       "en/usage/pipelines/dify",
                       "en/usage/pipelines/n8n",
@@ -535,7 +535,7 @@
                   "zh/usage/models/readme",
                   "zh/usage/pipelines/readme",
                   {
-                    "group": "LLMOps 平台",
+                    "group": "Agent 平台",
                     "pages": [
                       "zh/usage/pipelines/dify",
                       "zh/usage/pipelines/n8n",
@@ -770,7 +770,7 @@
                   "ja/usage/models/readme",
                   "ja/usage/pipelines/readme",
                   {
-                    "group": "LLMOps プラットフォーム",
+                    "group": "Agent プラットフォーム",
                     "pages": [
                       "ja/usage/pipelines/dify",
                       "ja/usage/pipelines/n8n",

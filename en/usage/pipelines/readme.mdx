@@ -27,7 +27,7 @@ The runner defines how to schedule the large model to process messages. The defa
 
 <img width="400px" src="/images/zh/deploy/pipelines/edit_pipeline_ai.png" alt="edit_pipeline" />
 
-You can also choose to use external LLMOps platforms such as `Dify`, [`n8n`](https://n8n.io/). In this case, the models, prompts, tools, and other resources used will be provided by the LLMOps platform.
+You can also choose to use external Agent platforms such as `Dify`, [`n8n`](https://n8n.io/). In this case, the models, prompts, tools, and other resources used will be provided by the Agent platform.
 
 <img width="400px" src="/images/zh/deploy/pipelines/more_runner.png" alt="more_runner" />
 
@@ -35,7 +35,7 @@ You can also choose to use external LLMOps platforms such as `Dify`, [`n8n`](htt
 - For detailed steps on connecting to n8n, you can [refer to the tutorial](/en/usage/pipelines/n8n.html).
 
 ### Conversation Variables
-When using external LLMOps platforms, LangBot explicitly passes the following parameters, which you can add to the start node of the LLMOps platform workflow (the image below is an example of Dify):
+When using external Agent platforms, LangBot explicitly passes the following parameters, which you can add to the start node of the Agent platform workflow (the image below is an example of Dify):
 
 - `launcher_type`: Launcher object type, `person` for private chat, `group` for group chat
 - `launcher_id`: Launcher object ID, user ID for private chat, group ID for group chat
