@@ -12,6 +12,7 @@ api:
     port: 5300
     webhook_prefix: 'http://127.0.0.1:5300'
     extra_webhook_prefix: ''
+    global_api_key: ''  # 全局 API Key。非空时即可直接用于 HTTP API 与 MCP 服务（/mcp）鉴权，无需登录态、无需数据库记录、无需 lbk_ 前缀；留空则关闭。明文存储，仅在可信/内网部署启用并配合 HTTPS。
 command:
     enable: true
     prefix:
@@ -150,6 +151,7 @@ space:
 - SQLite 作为数据库时，监控记录自动清理后会直接释放数据库文件空间。
 - `plugin.binary_storage.max_value_bytes` 用于限制插件单个二进制存储值大小，默认 10 MiB。
 - WebUI 侧边栏的“存储分析”页面可查看数据库、日志、上传文件、向量库、插件、MCP、临时文件等空间占用和清理候选项。
+- `api.global_api_key` 是面向 Agent / 自动化的全局 API Key：设置后，调用 HTTP API 或内置 MCP 服务（`/mcp`）时在请求头携带 `X-API-Key: <key>` 或 `Authorization: Bearer <key>` 即可鉴权，无需登录会话、无需在数据库中创建 `lbk_` 密钥。它是明文写在 `config.yaml` 中的，请仅在可信 / 内网环境启用，并通过 HTTPS 暴露。详见 [API Key 鉴权](https://github.com/langbot-app/LangBot/blob/master/docs/API_KEY_AUTH.md)。
 
 ## 通过环境变量设置
 

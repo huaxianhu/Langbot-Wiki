@@ -12,6 +12,7 @@ api:
     port: 5300
     webhook_prefix: 'http://127.0.0.1:5300'
     extra_webhook_prefix: ''
+    global_api_key: ''  # グローバル API キー。空でない場合、HTTP API と MCP サーバー（/mcp）の両方で、ログインセッション・データベースレコード・`lbk_` プレフィックス不要で認証されます。空 = 無効。平文で保存されるため、信頼できる / 内部デプロイでのみ有効化し、HTTPS で公開してください。
 command:
     enable: true
     prefix:
@@ -149,6 +150,7 @@ space:
 - SQLite をデータベースとして使用している場合、監視レコードの自動削除後にデータベースファイルの空き容量を直接解放します。
 - `plugin.binary_storage.max_value_bytes` は 1 つのプラグインバイナリストレージ値のサイズを制限します。デフォルトは 10 MiB です。
 - WebUI のサイドバーには「ストレージ分析」ページがあり、データベース、ログ、アップロードファイル、ベクターストア、プラグイン、MCP、一時ファイル、クリーンアップ候補を確認できます。
+- `api.global_api_key` はエージェント / 自動化向けのグローバル API キーです。設定すると、HTTP API または組み込み MCP サーバー（`/mcp`）の呼び出し時に `X-API-Key: <key>` または `Authorization: Bearer *** を送るだけで認証されます（ログインセッションやデータベース保存の `lbk_` キーは不要）。`config.yaml` に平文で保存されるため、信頼できる / 内部デプロイでのみ有効化し、HTTPS で公開してください。[API キー認証](https://github.com/langbot-app/LangBot/blob/master/docs/API_KEY_AUTH.md) を参照。
 
 ## 環境変数による設定
 
