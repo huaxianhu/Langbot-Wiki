@@ -153,6 +153,27 @@ uv run python -m langbot.pkg.persistence.alembic_runner autogenerate "describe y
   - `scope`: the affected package/module/file/class.
   - `subject`: a concise description of the change.
 
+## Agent-Facing Surfaces (MCP + Skills)
+
+LangBot is built to be **agent-friendly**, with three agent-facing surfaces that
+are kept in lockstep with the HTTP API:
+
+1. **MCP server** — `src/langbot/pkg/api/mcp/` exposes a curated subset of the API
+   as MCP tools at `/mcp` (API-key authenticated, including `api.global_api_key`
+   from config.yaml). `server.py` defines the tools (calling the service layer
+   directly); `mount.py` is the ASGI dispatcher.
+2. **In-repo skills** — the `skills/` directory is the **single source of truth**
+   for all LangBot agent skills (plugin dev, core dev, deployment, e2e, MCP
+   operations). Docs and the landing page link here rather than copying content.
+3. **API-key auth** — `api.global_api_key` (config.yaml) authenticates the API and
+   MCP without a login session; see `docs/API_KEY_AUTH.md`.
+
+> **Maintenance rule (important).** When you add, remove, or change an HTTP API
+> endpoint that should be agent-accessible, you MUST update **both** the matching
+> MCP tool in `src/langbot/pkg/api/mcp/server.py` **and** the relevant skill under
+> `skills/` (especially `skills/skills/langbot-mcp-ops`). API, MCP tools, and
+> skills are one system — drift between them is a bug.
+
 ## Some Principles
 
 - Keep it simple, stupid.
